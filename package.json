@@ -3,13 +3,9 @@
   "version": "1.0.0",
   "description": "API ITA JR Site Globo",
   "main": "app.js",
-  "engines": {
-    "node": "14.x"
-  },
   "scripts": {
-    "start": "nodemon app.js ",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon"
+    "start": "node app.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "José Gilvan",
   "license": "ISC",
