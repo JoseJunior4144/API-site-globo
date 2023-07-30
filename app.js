@@ -10,6 +10,6 @@ app.use(cors())
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 9001
 
 console.log("Hello World")
