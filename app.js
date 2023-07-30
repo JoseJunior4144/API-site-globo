@@ -13,3 +13,4 @@ app.use(bodyParser.json())
 
 const port = process.env.PORT || 3001
 console.log("Hello World")
+console.log("Hi")
