@@ -28,7 +28,7 @@ var DB =  {
 }
 
 function auth(req, res, next){
-    const authToken = req.headers['authorization']
+    const authToken = req.headers['Authorization']
     if(authToken != undefined) {
         const bearer = authToken.split(' ')
         var token = bearer[1]
