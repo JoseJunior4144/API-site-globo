@@ -48,7 +48,7 @@ function auth(req, res, next){
     }
 }
 
-app.post("/auth",(req,res) => {
+app.post("/auth", (req,res) => {
     var {email, password} = req.body
 
     if(email!=undefined) {
@@ -59,7 +59,7 @@ app.post("/auth",(req,res) => {
                 jwt.sign({
                     id: user.id,
                     email: user.email
-                }, JWTSecret, {expiresIn:'2h'}, (err, token) => {
+                }, JWTSecret, {expiresIn:'48h'}, (err, token) => {
                     if(err) {
                         res.status(400)
                         res.json({err: "Ocorreu um erro interno!"})
